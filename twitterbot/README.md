@@ -1,6 +1,7 @@
-The Pitch: My bot will check for annoying grammatical errors that people should have learned in elementary school. In particular, it will target users who erroneously use "different than" instead of "different from." The bot will report on how often said user has incorrectly used this construction in the recent past. 
+###The Pitch: My bot will check for annoying grammatical errors that people should have learned in elementary school. In particular, it will target users who erroneously use "different than" instead of "different from." The bot will report on how often said user has incorrectly used this construction in the recent past. 
 
-The Steps: 
+###The Steps: 
+
 1. The bot should check the search/tweets endpoint of the Twitter API.
 
 2. For each tweet, I want to save the screen name or the user ID.
