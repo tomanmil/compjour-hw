@@ -1,4 +1,6 @@
-###The Pitch: My bot will check for annoying grammatical errors that people should have learned in elementary school. In particular, it will target users who erroneously use "different than" instead of "different from." The bot will report on how often said user has incorrectly used this construction in the recent past. 
+###The Pitch: 
+
+My bot will check for annoying grammatical errors that people should have learned in elementary school. In particular, it will target users who erroneously use "different than" instead of "different from." The bot will report on how often said user has incorrectly used this construction in the recent past. 
 
 ###The Steps: 
 
