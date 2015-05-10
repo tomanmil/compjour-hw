@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Google Chart</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  </head>
+  <body>
+  <script type="text/javascript">
+    google.load("visualization", '1.1', {packages:['corechart']});
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = [['State', 'Jobs'], ['District of Columbia', 923], ['California', 670], ['Texas', 631], ['Virginia', 610], ['Arizona', 416], ['Georgia', 416], ['New York', 391], ['Maryland', 389], ['Washington', 389], ['New Mexico', 363]];
+      var datatable = google.visualization.arrayToDataTable(data);
+      var options = {
+        width: 800,
+        height: 500,
+        legend: { position: 'none' },
+      };
+      var chart = new google.visualization.BarChart(document.getElementById('mychart'));
+      chart.draw(datatable, options);
+  }
+  </script>
+
+    <div class="container">
+
+      <h1 style="text-align:center">Hello chart</h1>
+      <div id="mychart"></div>
+
+      <h2 style="text-align:center">Hello table</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Jobs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>District of Columbia</td><td>923</td></tr>
+<tr><td>California</td><td>670</td></tr>
+<tr><td>Texas</td><td>631</td></tr>
+<tr><td>Virginia</td><td>610</td></tr>
+<tr><td>Arizona</td><td>416</td></tr>
+<tr><td>Georgia</td><td>416</td></tr>
+<tr><td>New York</td><td>391</td></tr>
+<tr><td>Maryland</td><td>389</td></tr>
+<tr><td>Washington</td><td>389</td></tr>
+<tr><td>New Mexico</td><td>363</td></tr>
+<tr><td>Colorado</td><td>355</td></tr>
+<tr><td>Florida</td><td>351</td></tr>
+<tr><td>Oklahoma</td><td>339</td></tr>
+<tr><td>North Carolina</td><td>298</td></tr>
+<tr><td>Illinois</td><td>283</td></tr>
+<tr><td>Ohio</td><td>266</td></tr>
+<tr><td>Missouri</td><td>265</td></tr>
+<tr><td>Michigan</td><td>252</td></tr>
+<tr><td>Pennsylvania</td><td>247</td></tr>
+<tr><td>Louisiana</td><td>244</td></tr>
+<tr><td>Massachusetts</td><td>239</td></tr>
+<tr><td>South Dakota</td><td>238</td></tr>
+<tr><td>Oregon</td><td>235</td></tr>
+<tr><td>Alaska</td><td>228</td></tr>
+<tr><td>Alabama</td><td>228</td></tr>
+<tr><td>Utah</td><td>224</td></tr>
+<tr><td>South Carolina</td><td>206</td></tr>
+<tr><td>Montana</td><td>198</td></tr>
+<tr><td>Tennessee</td><td>195</td></tr>
+<tr><td>Minnesota</td><td>193</td></tr>
+<tr><td>Kentucky</td><td>190</td></tr>
+<tr><td>Mississippi</td><td>184</td></tr>
+<tr><td>Hawaii</td><td>181</td></tr>
+<tr><td>Nevada</td><td>176</td></tr>
+<tr><td>Indiana</td><td>170</td></tr>
+<tr><td>Arkansas</td><td>163</td></tr>
+<tr><td>Idaho</td><td>162</td></tr>
+<tr><td>Nebraska</td><td>160</td></tr>
+<tr><td>Wyoming</td><td>160</td></tr>
+<tr><td>Kansas</td><td>154</td></tr>
+<tr><td>Wisconsin</td><td>150</td></tr>
+<tr><td>West Virginia</td><td>143</td></tr>
+<tr><td>New Jersey</td><td>137</td></tr>
+<tr><td>North Dakota</td><td>115</td></tr>
+<tr><td>Iowa</td><td>93</td></tr>
+<tr><td>Connecticut</td><td>83</td></tr>
+<tr><td>New Hampshire</td><td>62</td></tr>
+<tr><td>Delaware</td><td>59</td></tr>
+<tr><td>Maine</td><td>52</td></tr>
+<tr><td>Rhode Island</td><td>40</td></tr>
+<tr><td>Vermont</td><td>33</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
