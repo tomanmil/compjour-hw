@@ -8,7 +8,14 @@ def get_csv():
     csv_path = './static/sf311.csv'
     csv_file = open(csv_path, 'r')
     csv_obj = csv.DictReader(csv_file)
-    csv_list = list(csv_obj)
+    csv_list = []
+    for row in csv_obj:
+        mypoint = row['point'].replace('(','').replace(')','')
+        pointlist = mypoint.split(',')
+        row['y'] = float(pointlist[0])
+        row['x'] = float(pointlist[1])
+        csv_list.append(row)
+    print(csv_list)
     return csv_list
 
 @app.route("/")
