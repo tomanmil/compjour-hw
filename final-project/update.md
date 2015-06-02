@@ -18,5 +18,4 @@ a.	Name, Address, latitude and longitude, Inspection Grade, Demerits, Number of 
 3)	MOCKUP 
 Aesthetics: how the prototype would look. 
 a.	Text: flask practice
-Search   Map
-Text Results
+![Imgur](http://i.imgur.com/7Xr4xHy.jpg)
