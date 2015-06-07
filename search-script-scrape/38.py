@@ -1,5 +1,5 @@
 import requests
 import json 
-response = requests.get('https://analytics.usa.gov/data/live/ie.json')
+response = requests.get('https://analytics.usa.gov/data/live/top-pages-realtime.json')
 data = response.json()
-print(data['totals']['ie_version']['6.0'])
+print(data['data'][0]['page'])
