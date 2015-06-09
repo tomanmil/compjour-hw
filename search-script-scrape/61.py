@@ -1,6 +1,6 @@
-import bs4
+from lxml import html
 import requests
-response = requests.get('http://www.state.gov/secretary/travel/')
-soup = bs4.BeautifulSoup(response.text)
-link = soup.select("div#content-output div#content-well div.travel-wrap")
-print(link)
+response = requests.get('http://www.data.gov/')
+doc = html.fromstring(response.text)
+link = doc.cssselect('small a')[0]
+print(link.text)
