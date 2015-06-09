@@ -1,6 +1,6 @@
-import bs4
+from lxml import html
 import requests
 response = requests.get('http://www.supremecourt.gov/')
-soup = bs4.BeautifulSoup(response.text)
-link = soup.select("div.recentdecisions")
-print(link)
+doc = html.fromstring(response.text)
+link = doc.cssselect('div.recentdecisions a')[0]
+print(link.text)
