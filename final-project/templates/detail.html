@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head></head>
+    <body>
+        <h3>{{ obj.name }}</h3>
+        <table border=1 cellpadding=7>
+            <tr>
+                <th>Inspection Date</th>
+                <th>Grade</th>
+                <th>Demerits</th>
+                <th>Result</th>
+            </tr>
+            {% for i in obj.inspection_history %}
+            <tr>
+                <td>{{ i.date }}</td>
+                <td>{{ i.grade }}</td>
+                <td>{{ i.demerits }}</td>
+                <td>{{ i.result }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
