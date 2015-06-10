@@ -58,6 +58,7 @@ def detail(row_id):
     object_list = get_csv()
     for row in object_list:
         if row['id'] == row_id:
+            print(row['inspection_history'])
             return render_template(template, object=row)
     abort(404)
 
