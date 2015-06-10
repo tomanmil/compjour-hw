@@ -1,5 +1,3 @@
-# The sum of White House staffermember salaries in 2014
-# Note: this is a pretty verbose step-by-step
 import requests
 import csv
 url = "https://open.whitehouse.gov/api/views/i9g8-9web/rows.csv?accessType=DOWNLOAD"
