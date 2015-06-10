@@ -5,13 +5,12 @@ response = requests.get(data_url)
 soup = bs4.BeautifulSoup(response.text)
 link = soup.select("td")[0]
 print(link.text)
-06/18/2015
+
 import time
 from datetime import date
 today = date.today()
-print today
-2015-06-08
+print(today)
+
 execution = date(today.year, 6, 18)
 time_to_execution = abs(execution - today)
-time_to_execution
-Out[123]: datetime.timedelta(10)
+print(time_to_execution)

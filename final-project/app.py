@@ -11,7 +11,7 @@ def get_csv():
     csv_obj = csv.DictReader(csv_file)
     csv_list = list(csv_obj)
     for row in csv_list:
-        if not isinstance(row['current_grade'],str) or not isinstance(row['current_demerits'],int):
+        if row['current_grade'] != "A" and row['current_grade'] != "B" and row['current_grade'] != "C":
             csv_list.remove(row)
     return csv_list
 
